@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dispatch Project</title>
+        <link href="/static/dist/css/materialize.css" rel="stylesheet">
+        <link href="/static/dist/css/style.css" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <div style="margin:0" class="progress">
+            <div class="indeterminate"></div>
+        </div>
+
+        <div id="main">
+        </div>
+    </body>
+    <script type="text/javascript" src="/static/dist/js/jquery-2.1.1.min.js"></script>
+    <script src="/static/dist/js/react.js"></script>
+    <script type="text/javascript" src="/static/dist/js/materialize.min.js"></script>
+    <script src="/static/dist/js/react-dom.js"></script>
+    <script src="/static/dist/app.js"></script>
+    <script>
+    $('#modal').closeModal();
+
+    $('.progress')
+        .hide()
+        .ajaxStart(function() {
+            $(this).show();
+        })
+        .ajaxStop(function() {
+            $(this).hide();
+        });
+        </script>
+</html>

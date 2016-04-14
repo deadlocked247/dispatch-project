@@ -1,0 +1,40 @@
+.pad-right {
+    padding-right: 5px;
+}
+
+hr {
+    border: 0px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.heading {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: #31423F;
+    letter-spacing: 1px;
+}
+.no-border {
+    border: 0px !important;
+}
+
+.margin-bottom {
+    margin-bottom: 10px;
+}
+
+.padding-right {
+    margin-right: 5px;
+}
+
+.fix-hori {
+    position: relative;
+    top: -5px;
+}
+
+.breadcrumb:before {
+    color: grey !important;
+}
+
+#main {
+    padding:40px 0px;
+}
